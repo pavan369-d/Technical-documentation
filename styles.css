@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#main-doc {
+  font-family: sans-serif;
+  display: flex;
+  padding: 20px 10px 30px 20px;
+}
+
+#navbar {
+  height: 100%;
+  position: sticky;
+  top: 10px;
+}
+
+#JS_Documentation {
+  font-size: 32px;
+  text-align: center;
+}
+
+#navbar ul {
+  width: 400px;
+  height: 88vh;
+  overflow-y: auto;
+  border: 2px solid gray;
+  padding: 10px;
+  list-style: none;
+  font-size: 20px;
+}
+
+#navbar ul li a:link,
+#navbar ul li a:visited {
+  color: gray;
+  text-decoration: none;
+}
+
+ul li {
+  border-bottom: 1px solid gray;
+  padding: 10px;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+.main-section {
+  width: 80%;
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+header {
+  margin-left: 20px;
+  font-size: 35px;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.main-section p {
+  color: #3e3e3e;
+  padding: 10px 5px 10px 20px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.main-section code {
+  color: #3d3d3d;
+  padding-left: 20px;
+}
+
+.main-section-ul {
+  border: none;
+
+  margin-left: 20px;
+  list-style: square;
+  color: gray;
+}
+.main-section-ul li {
+  border-bottom: none;
+  font-size: 18px;
+  margin-left: 40px;
+  line-height: 30px;
+}
+
+#sublist {
+  border: none;
+  margin-left: 20px;
+  color: gray;
+}
+
+#sublist li {
+  list-style: circle;
+}
+
+#Reference ul {
+  border: none;
+  color: gray;
+  list-style: square;
+  margin-left: 50px;
+}
+
+#Reference ul li a:link,
+#Reference ul li a:visited {
+  color: blue;
+  text-decoration: underline;
+}
+
+@media (min-width: 253px) and (max-width: 720px) {
+  #main-doc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #navbar {
+    position: static;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 40px;
+    min-width: 300px;
+  }
+  #navbar ul {
+    width: 100%;
+    height: 245px;
+    overflow-y: auto;
+  }
+
+  .main-section {
+    width: 100%;
+  }
+}
+
+@media (min-width: 790px) and (max-width: 1200px) {
+  #navbar ul {
+    width: 400px;
+    height: 88vh;
+    overflow-y: auto;
+  }
+}
